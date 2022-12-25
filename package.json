@@ -1,15 +1,16 @@
 {
   "name": "jsoneditor-react18",
-  "version": "0.2.0",
+  "version": "0.5.0",
   "description": "React implementation of https://github.com/josdejong/jsoneditor",
   "main": "es",
   "module": "es",
   "files": [
     "es",
     "*.md",
-    "docs"
+    "docs",
+    "*.d.ts"
   ],
-  "typings": "./index.d.ts",
+  "typings": "./jsoneditor-react18.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env BABEL_ENV=test NODE_ENV=test start-storybook -p 9001 -c .storybook",
@@ -20,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vankop/jsoneditor-react.git"
+    "url": "git+https://github.com/sreenaths/jsoneditor-react18.git"
   },
   "keywords": [
     "react",
@@ -30,9 +31,9 @@
   "author": "Ivan Kopeykin <ivan.kopeykin@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vankop/jsoneditor-react/issues"
+    "url": "https://github.com/sreenaths/jsoneditor-react18/issues"
   },
-  "homepage": "https://github.com/vankop/jsoneditor-react#readme",
+  "homepage": "https://github.com/sreenaths/jsoneditor-react18#readme",
   "dependencies": {
     "prop-types": "^15.7.2"
   },

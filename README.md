@@ -1,17 +1,17 @@
-# jsoneditor-react
-[![Version](https://img.shields.io/npm/v/jsoneditor-react.svg)](https://www.npmjs.com/package/jsoneditor-react)
-[![Licence](https://img.shields.io/npm/l/jsoneditor-react.svg)](https://github.com/vankop/jsoneditor-react/blob/master/LICENSE)
-[![Known Vulnerabilities](https://snyk.io/test/github/vankop/jsoneditor-react/badge.svg?targetFile=package.json)](https://snyk.io/test/github/vankop/jsoneditor-react?targetFile=package.json)
+# jsoneditor-react18
+[![Version](https://img.shields.io/npm/v/jsoneditor-react18.svg)](https://www.npmjs.com/package/jsoneditor-react18)
+
+react18 fork of [vankop/jsoneditor-react](https://github.com/vankop/jsoneditor-react)
 
 react wrapper implementation for [josdejong/jsoneditor](https://github.com/josdejong/jsoneditor)
 
 ## Installation
 
 ```
-npm install --save jsoneditor jsoneditor-react
+npm install --save jsoneditor jsoneditor-react18
 ```
 
-```jsoneditor-react``` using minimalist version of ```jsoneditor``` to minimize flat bundle size, so if you want to use [Ajv](https://github.com/epoberezkin/ajv) or [Ace Editor](https://github.com/thlorenz/brace) install them as well
+```jsoneditor-react18``` using minimalist version of ```jsoneditor``` to minimize flat bundle size, so if you want to use [Ajv](https://github.com/epoberezkin/ajv) or [Ace Editor](https://github.com/thlorenz/brace) install them as well
 
 ## Bundling
 
@@ -30,8 +30,8 @@ module.exports = {
 ## Usage
 
 ```javascript
-import { JsonEditor as Editor } from 'jsoneditor-react';
-import 'jsoneditor-react/es/editor.min.css';
+import { JsonEditor as Editor } from 'jsoneditor-react18';
+import 'jsoneditor-react18/es/editor.min.css';
 ```
 
 later in render method:
@@ -115,20 +115,20 @@ Or define your own ace theme
 
 ## Async component
 
-If you using webpack and es6 dynamic imports you can load ```jsoneditor-react``` asynchronously.
+If you using webpack and es6 dynamic imports you can load ```jsoneditor-react18``` asynchronously.
 You can use [react-imported-component](https://github.com/theKashey/react-imported-component) or your own implementation
 
 ```javascript
 import importedComponent from 'react-imported-component';
 
-const JsonEditor = importedComponent(() => import(/* webpackChunkName:'jsoneditor' */'jsoneditor-react'));
+const JsonEditor = importedComponent(() => import(/* webpackChunkName:'jsoneditor' */'jsoneditor-react18'));
 ```
 
 Or with [Ajv](https://github.com/epoberezkin/ajv) and [Ace Editor](https://github.com/thlorenz/brace):
 
 ```jsx
 const JsonEditor = importedComponent(() => Promise.all([
-    import(/* webpackChunkName:'jsoneditor' */'jsoneditor-react'),
+    import(/* webpackChunkName:'jsoneditor' */'jsoneditor-react18'),
     import(/* webpackChunkName:'jsoneditor' */'brace'),
     import(/* webpackChunkName:'jsoneditor' */'ajv'),
     import(/* webpackChunkName:'jsoneditor' */'brace/mode/json'),
@@ -150,7 +150,7 @@ const JsonEditor = importedComponent(() => Promise.all([
 
 ## Playground
 
-You can view usage of ```jsoneditor-react``` using our storybook.
+You can view usage of ```jsoneditor-react18``` using our storybook.
 
 #### Steps to run storybook
 
